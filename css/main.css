@@ -109,6 +109,52 @@ select any element that is a sibling and comes after the target element in the D
     grid-row: 1/1;
 }
 
+.book-now {
+    background-color: #9a2018;
+    color: white;
+    font-size: 16px;
+    grid-row: 1/2;
+    height:67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+
+.book-now:hover {
+    box-shadow: inset 0 -120px 0 0 rgb(196, 28, 28);
+}
+
+
+.hero-img-h2 {
+    background-color: white;
+    padding: 15px;
+    grid-column: 1/-1;
+    align-self: end;
+    font-size: 14px;
+}
+/*align-self moves it to bottom*/
+
+.hero-img-h2 span {
+    color: #9a2018;
+    font-size: 12px;
+    /*margin-bottom: 15px; doesn't work? line-height makes extra space*/
+    line-height: 30px;
+}
+
+#hero-welcome {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/*just first paragraph for p:first-of-type*/
+#hero-welcome p:first-of-type {
+    border-top: solid 3px #Cf6666;
+    margin-top: 15px;
+    padding-top: 20px;
+}
 
 
 
