@@ -47,7 +47,14 @@
 
 a {
     text-decoration: none;
-    color: #626262
+    transition: all .5s ease-in-out;
+    color: #626262;
+}
+
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 p {
@@ -55,21 +62,26 @@ p {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     color: #626262;
-    font-family: "Sanchez", "Times New Roman", Times, serif;
+    font-family: 'Sanchez', 'Times New Roman', serif;
+    font-weight: normal;
     font-size: 14px;
 }
 
 .cr-red {
-    color:#9a2018;
+    color: #9a2018;
 }
 
 /* 3. ---Header--- */
 
 #main-nav label img {
-    border: 0;
-    width: 20px;
-    height: 20px;
+	background: url(../images/burger.svg) center no-repeat;
+	border: 0px;
+	width: 25px;
+	height: 20px;
+	transition: all .5s ease;
     margin-top: 15px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -79,86 +91,153 @@ body {
     list-style: none;
     padding: 0;
     margin: 0 0 10px 0;
-}
-
-#main-nav ul li a {
-    display: block;
-    padding: 10px 0 10px 0;
-}
-
-#main-nav ul li {
-    border-bottom: 1px solid #efefef;
-}
+ }
+ 
+ #main-nav li a {
+     display: block;
+     padding: 10px 0 10px 0;
+     text-align: center;
+     color:#9a2018;
+ }
+ 
+ #main-nav li {
+     border-bottom: 1px solid #efefef;
+ }
 
 #burger-con, #main-nav input {
     display: none;
 }
 
-#main-nav input:checked ~ #burger-con {
+/* The general sibling combinator ~ means: “Select any element that is a sibling (shares the same parent) and comes after the target element in the DOM.” */
+
+/* When the checkbox is checked, target the <ul id="burger-con"> that comes after it in the markup. */
+ #main-nav input:checked ~ #burger-con {
     display: block;
-}
-/* ~ is known as the general sibling combinator, which means
-select any element that is a sibling and comes after the target element in the DOM */
-#main-nav input:checked ~ label img {
+ }
+
+ /* When the checkbox is checked, target the <img> inside the <label> that comes after it. */
+ #main-nav input:checked ~ label img{
     transform: rotate(90deg);
-}
+ }
 
 /* 4. ---Main Hero Image--- */
 
+#main-hero {
+    margin-top: 20px;
+}
+
 .hero-overlap {
-    grid-row: 1/1;
+   grid-row: 1/1; 
 }
 
 .book-now {
     background-color: #9a2018;
-    color: white;
+    color: #fff;
     font-size: 16px;
-    grid-row: 1/2;
-    height:67px;
+    transition: background-color 500ms ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-style: italic;
+    transition:all 1s ease;
     cursor: pointer;
-    transition: all 500ms ease-in-out;
-}
+    grid-row: 1/2;
+    height: 67px;
+ }
 
+ .book-now:hover {
+    box-shadow: inset 0px -120px 0px 0px rgb(196, 28, 28);
+ }
 
-.book-now:hover {
-    box-shadow: inset 0 -120px 0 0 rgb(196, 28, 28);
-}
-
-
-.hero-img-h2 {
-    background-color: white;
-    padding: 15px;
+ .hero-img-h2 {
+    background: rgb(255, 255, 255);
+    padding: 15px 15px;
+    font-size: 18px;
     grid-column: 1/-1;
+    grid-row: 2/3;
     align-self: end;
-    font-size: 14px;
-}
-/*align-self moves it to bottom*/
-
-.hero-img-h2 span {
+ }
+ 
+ .hero-img-h2 span {
     color: #9a2018;
     font-size: 12px;
-    /*margin-bottom: 15px; doesn't work? line-height makes extra space*/
-    line-height: 30px;
-}
+    margin-bottom: 15px;
+    line-height: 20px;
+ }
 
-#hero-welcome {
+ .hero-header {
     font-size: 14px;
     line-height: 22px;
-}
+ }
 
-/*just first paragraph for p:first-of-type*/
-#hero-welcome p:first-of-type {
-    border-top: solid 3px #Cf6666;
+  .hero-header p:first-of-type {
+    border-top: solid 3px #CF6666;
     margin-top: 15px;
     padding-top: 20px;
+ } 
+
+ .box-container {
+    background-color:#9a2018;
+    padding: 1rem;
+    margin-bottom: 20px;
+ }
+
+ #snowmobile-info-box {
+  border-top:
 }
+/* 5. --- Feed the Wildlife Birds--- */
+
+#hero-birds {
+    font-size: 14px;
+    line-height: 22px;
+ }
+ 
+
+/* .8 --- Footer --- */
+
+#main-footer {
+    background-image: url(../images/footer-bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 40px;
+    padding-bottom: 80px;
+ }
+
+ #main-footer-contact-info h3 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'ceragr-regularuploaded_file', arial, sans-serif;
+ }
+
+ #main-footer-contact-info p {
+    line-height: 22px;
+ }
+
+ #main-footer nav {
+    display: none;
+ }
+
+ #price-policy {
+    border-top: solid 3px #CF6666;
+    margin-top: 15px;
+    padding-top: 30px;
+    line-height: 22px;
+ }
 
 
 
 
+
+
+
+
+
+
+ 
 /*image carousel*/
 @keyframes tonext {
   75% {
@@ -205,13 +284,6 @@ select any element that is a sibling and comes after the target element in the D
   }
 }
 
-body {
-  max-width: 37.5rem;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-  font-family: 'Lato', sans-serif;
-}
-
 * {
   box-sizing: border-box;
   scrollbar-color: transparent transparent; /* thumb and track color */
@@ -236,7 +308,6 @@ body {
 }
 
 ol, li {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
