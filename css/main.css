@@ -47,14 +47,7 @@
 
 a {
     text-decoration: none;
-    transition: all .5s ease-in-out;
-    color: #626262;
-}
-
-input, textarea {
-    display: block;
-    margin: 0;
-    padding: 0;
+    color: #626262
 }
 
 p {
@@ -62,26 +55,21 @@ p {
 }
 
 body {
-    margin: 0;
-    padding: 0;
     color: #626262;
-    font-family: 'Sanchez', 'Times New Roman', serif;
-    font-weight: normal;
+    font-family: "Sanchez", "Times New Roman", Times, serif;
     font-size: 14px;
 }
 
 .cr-red {
-    color: #9a2018;
+    color:#9a2018;
 }
 
 /* 3. ---Header--- */
 
 #main-nav label img {
-	background: url(../images/burger.svg) center no-repeat;
-	border: 0px;
-	width: 25px;
-	height: 20px;
-	transition: all .5s ease;
+    border: 0;
+    width: 20px;
+    height: 20px;
     margin-top: 15px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -91,39 +79,34 @@ body {
     list-style: none;
     padding: 0;
     margin: 0 0 10px 0;
- }
- 
- #main-nav li a {
-     display: block;
-     padding: 10px 0 10px 0;
-     text-align: center;
-     color:#9a2018;
- }
- 
- #main-nav li {
-     border-bottom: 1px solid #efefef;
- }
+}
+
+#main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+}
+
+#main-nav ul li {
+    border-bottom: 1px solid #efefef;
+}
 
 #burger-con, #main-nav input {
     display: none;
 }
 
-/* The general sibling combinator ~ means: “Select any element that is a sibling (shares the same parent) and comes after the target element in the DOM.” */
-
-/* When the checkbox is checked, target the <ul id="burger-con"> that comes after it in the markup. */
- #main-nav input:checked ~ #burger-con {
+#main-nav input:checked ~ #burger-con {
     display: block;
- }
-
- /* When the checkbox is checked, target the <img> inside the <label> that comes after it. */
- #main-nav input:checked ~ label img{
+}
+/* ~ is known as the general sibling combinator, which means
+select any element that is a sibling and comes after the target element in the DOM */
+#main-nav input:checked ~ label img {
     transform: rotate(90deg);
- }
+}
 
 /* 4. ---Main Hero Image--- */
 
-#main-hero {
-    margin-top: 20px;
+.hero-overlap {
+    grid-row: 1/1;
 }
 
 .hero-overlap {
@@ -170,7 +153,7 @@ body {
     line-height: 22px;
  }
 
-  .hero-header p:first-of-type {
+.hero-header p:first-of-type {
     border-top: solid 3px #CF6666;
     margin-top: 15px;
     padding-top: 20px;
@@ -192,6 +175,18 @@ body {
     line-height: 22px;
  }
  
+
+
+ /* --- Activities Pag --- */
+ #algonquin-park-title {
+ margin-bottom: 20px;
+ }
+ 
+ #seasonal-list {
+  list-style-type: none;
+  margin: 35px;
+  font-size: 48px;
+ }
 
 /* .8 --- Footer --- */
 
