@@ -2,101 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Activities Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d0e8431583.js" crossorigin="anonymous"></script>
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <title>Activities</title>
 </head>
 <body>
-    <h1 class="hidden">Welcome to the Couples Resort</h1>
-        <header id="main-header" class="grid-con">
-            
-            <div id="logo" class="col-span-full">
-                <!--Change whatever decide on grid "col-span-full"-->
-            <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
-            </div>
-
-            <nav id="main-nav" class="col-span-full">
-                <h2 class="hidden">Main Navigation</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
+    <h1 class="hidden">Welcome to The Couples Resort</h1>
+    <div id="mobile-outline">
+    <header id="main-header" class="grid-con">
+        <nav id="main-nav" class="col-span-full">
+            <h2 class="hidden">Main Navigation</h2>
+            <input type="checkbox" id="hamburger">
+            <label for="hamburger">
+                <img src="images/burger.svg" alt="hamburger menu icon">
+            </label>
+                <ul id="burger-con">
+                    <li><a href="#">Home</a></li>
                     <li><a href="#">Rooms</a></li>
                     <li><a href="#">Packages</a></li>
                     <li><a href="#">Dining</a></li>
                     <li><a href="spa.html">Spa</a></li>
                     <li><a href="activities.html">Activities</a></li>
                     <li><a href="#">Reservations</a></li>
-                    <li><a href="#">Book Now</a></li>
-                    <!--Book Now will be diff colour and box-->
-                </ul>
-            </nav>
         </header>
-    <main>
-        <section>
-        <img src="#" alt="Activities Image" width="#" height="#">
-        <p>Couples Resort</p>
-        <h2>Activities</h2>
+        <div id="logo" class="col-span-full">
+        <img src="images/couples_resort_logo.svg" alt="Couples Resort Logo">
+        </div>
 
-        <p>No matter what time of year, there's always a lot to do at Couples Resort. Then again, who said you couldn't just relax in a deep padded chaise lounge on your own room deck and indulge in a favorite novel while resting in the soothing warmth of the day.  Whatever you choose, you're sure to enjoy all of our activities.<br>
-        The resort sits on a Semi-Private Lake, Galeairy Lake which is 11 km long reaching into Algonquin Park and 95% undeveloped so great for exploring hidden bays and exploring what nature has to offer along the shorelines.  Or explore the rugged surroundings can compel you to take a guided trail ride in the Algonqin wilderness. With with direct access to 35 km of trail alongside the serene Madawaska River on an abandoned railway bed you can go mountain biking or ATVing for hours. Or take a leisurely hike on the resorts trails.</p>
+    <main>
+        <section id="main-hero" class="grid-full hero-header">
+            <img src="images/hero-activities.png" alt="Couples Resort on the lake" class="col-span-full hero-overlap">
+            <div class="grid-con col-span-full hero-overlap">
+                <a class="book-now col-start-3 col-end-5" id="book-now-top">Book Now</a>
+                <h2 class="hero-img-h2">
+                    <span>Couples Resort</span><br>Activities</h2>
+            </div>
+        </section>
         
-        <h3>Algonquin Park</h3>
-        <p>This majestic park, minutes away and seen from our lake shore, is awe-inspiring and completely peaceful with the incredible beauty of nature. Come experience the Algonquin grandeur, with all its fresh clean air, deep blue skies, rich green forests and hundreds of pristine lakes.<br>
+        <section class="grid-con hero-header">
+            <h2 class="hidden">Activities Information</h2>
+    
+        <p class="col-span-full">No matter what time of year, there's always a lot to do at Couples Resort. Then again, who said you couldn't just relax in a deep padded chaise lounge on your own room deck and indulge in a favorite novel while resting in the soothing warmth of the day. Whatever you choose, you're sure to enjoy all of our activities.</p>
+        <p class="col-span-full">The resort sits on a Semi-Private Lake, Galeairy Lake which is 11 km long reaching into Algonquin Park and 95% undeveloped so great for exploring hidden bays and exploring what nature has to offer along the shorelines. Or explore the rugged surroundings can compel you to take a guided trail ride in the Algonqin wilderness. With with direct access to 35 km of trail alongside the serene Madawaska River on an abandoned railway bed you can go mountain biking or ATVing for hours. Or take a leisurely hike on the resorts trails.</p>
+        
+        <h3 id=algonquin-park-title class="col-span-full">Algonquin Park</h3>
+        <p class="col-span-full">This majestic park, minutes away and seen from our lake shore, is awe-inspiring and completely peaceful with the incredible beauty of nature. Come experience the Algonquin grandeur, with all its fresh clean air, deep blue skies, rich green forests and hundreds of pristine lakes.<br>
         Just steps away from The Couples Resort, Algonquin's 7,630 square kilometres of forests, lakes, and rivers have assumed an almost incalculable importance as a living link with a vanishing past.<br>
         
-        Algonquin Park contains numerous historical and archaeological resources and has inspired more than 40 books, 1,800 scientific papers, a dozen films, a symphony, and the art of Tom Thomson and the Group of Seven. It also provides many opportunities for visitors to appreciate the Park's natural setting while enjoying numerous recreational activities.<br>
+        Algonquin Park contains numerous historical and archaeological resources and has inspired more than 40 books, 1,800 scientific papers, a dozen films, a symphony, and the art of Tom Thomson and the Group of Seven. It also provides many opportunities for visitors to appreciate the Park's natural setting while enjoying numerous recreational activities.</p>
         
-        We provide a Free Park Pass, please ask ou front desk for more information.</p>
+        <p class="col-span-full">We provide a Free Park Pass, please ask our front desk for more information.</p>
 
-        <h3>Park Activities</h3>
-        <ul>
-            <li>17 Hiking trails from casual to ambitious</li>
-            <li>Canoeing from paddle to portage</li>
-            <li>Wildlife spotting from loon to moose</li>
-            <li>Lake Swimming</li>
-            <li>Fishing <a href="#">(Click to see more about Fishing)</a></li>
-        </ul>
 
-        <div class="photo-gallery"> Photo Gallery</div>
+        <p class="col-span-full"><a href="https://www.algonquinpark.on.ca/virtual/webcam/index.php">ALGONQUIN PARK LIVE NOW WEATHER CAM</a></p>
         </section>
 
         <section>
-        <img src="#" alt="Activities Image" width="#" height="#">
-        <p>Couples Resort Activities</p>
-        <h2>Seasonal Activities</h2>
-
-        <ul>
-            <li><a href="#"><img src="images/" alt="Spring Image">Spring</a></li>
-            <li><a href="#"><img src="images/" alt="Summer Image">Summer</a></li>
-            <li><a href="#"><img src="images/" alt="Fall Image">Fall</a></li>
-            <li><a href="winter.html"><img src="images/" alt="Winter Image">Winter</a></li>
-        </ul>
+        <section id="main-hero" class="grid-full hero-header">
+            <img src="images/hero-seasonal-attractions.png" alt="Couple Canoeing" class="col-span-full hero-overlap">
+            <div class="grid-con col-span-full hero-overlap">
+                <h2 class="hero-img-h2">
+                    <span>Couples Resort</span><br>Activities</h2>
+            </div>
+        </section>
+        <section class="grid-con hero-header">
+            <h2 class="hidden">Seasonal Attractions</h2>
+            <ul id="seasonal-list" class="col-span-full">
+                <li><a href="#"><img src="images/square-spring.png" alt="Spring Image">Spring</a></li>
+                <li><a href="#"><img src="images/square-summer.png" alt="Summer Image">Summer</a></li>
+                <li><a href="#"><img src="images/square-fall.png" alt="Fall Image">Fall</a></li>
+                <li><a href="winter.html"><img src="images/square-winter.png" alt="Winter Image">Winter</a></li>
+            </ul>
         </section>
     </main>
 
-    <footer id="main-footer">
-        <h2>Couples Resort</h2>
-            <p>1198 Osprey Rd, (End of)<br>
-            Minden, Soyers Lake, ON<br>
-            K0M 2K0<br>
-            Toll Free:+1 877 201-1156<br>
-            FAX:+1 613 638 2217<br>
-            E-mail: info@coupleresort.com</p>
-
-            <nav id="footer-nav" class="col-span-full">
-                <h2 class="hidden">Main Navigation</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Rooms</a></li>
-                    <li><a href="#">Packages</a></li>
-                    <li><a href="#">Dining</a></li>
-                    <li><a href="spa.html">Spa</a></li>
-                    <li><a href="activities.html">Activities</a></li>
-                    <li><a href="#">Reservations</a></li>
-                </ul>
-                
-                <a href="#" class="Button">Book Now</a>
-            </nav>
-        
-        <p>&copy; 2013 Couples Resort Inc. All Rights Reserved. Privacy policy</p>
-    </footer> 
+    <footer id="main-footer" class="grid-con">
+            <h2 class="hidden">Couples Resort Footer</h2>
+                       
+                    <div id="main-footer-contact-info" class="col-span-full">                      
+                        <h3>Couples Resort</h3>
+                        <p>1198 Osprey Rd, (End of)<br>
+                            Minden, Soyers Lake, ON, <br>
+                            K0M 2K0
+                        </p>
+                        <h3 class="hidden">Phone and Fax Information</h3>
+                        <p>
+                            Toll Free:+1 877 201-1156<br>
+                            FAX:+1 613 638 2217
+                        </p>
+                    </div>
+            
+                <p id="price-policy" class="col-span-full">All prices and services on this website and in our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing.<br>©2013 Couples Resort Inc. All Rights Reserved. Privacy Policy </p>
+    </footer>
+    </div>
 </body>
 </html>
