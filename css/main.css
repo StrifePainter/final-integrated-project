@@ -71,8 +71,37 @@ body {
     width: 20px;
     height: 20px;
     margin-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     cursor: pointer;
+    transition: transform 0.5s ease-in-out; 
+    transform: scale(1) rotate(0deg); 
+}
+
+
+#main-nav label img:hover {
+    transform: scale(1.2) rotate(0deg); 
+}
+
+#main-nav input:checked ~ label img {
+    transform: scale(1) rotate(90deg); 
+}
+
+#main-nav input:checked ~ label img:hover {
+    transform: scale(1.2) rotate(90deg); 
+}
+
+#burger-con {
+    max-height: 0; 
+    overflow: hidden; 
+    transition: max-height 0.5s ease-in-out;
+}
+
+#main-nav input:checked ~ #burger-con {
+    max-height: 500px;
+}
+
+#main-nav input {
+    display: none;
 }
 
 #main-nav ul {
@@ -90,25 +119,7 @@ body {
     border-bottom: 1px solid #efefef;
 }
 
-#burger-con, #main-nav input {
-    display: none;
-}
-
-#main-nav input:checked ~ #burger-con {
-    display: block;
-}
-/* ~ is known as the general sibling combinator, which means
-select any element that is a sibling and comes after the target element in the DOM */
-#main-nav input:checked ~ label img {
-    transform: rotate(90deg);
-}
-
 /* 4. ---Main Hero Image--- */
-
-.hero-overlap {
-    grid-row: 1/1;
-}
-
 .hero-overlap {
    grid-row: 1/1; 
 }
@@ -160,14 +171,16 @@ select any element that is a sibling and comes after the target element in the D
  } 
 
  .box-container {
-    background-color:#9a2018;
+    background-color:#CF6666;
     padding: 1rem;
     margin-bottom: 20px;
+    color: white;
  }
 
  #snowmobile-info-box {
   border-top:
 }
+
 /* 5. --- Feed the Wildlife Birds--- */
 
 #hero-birds {
@@ -177,7 +190,7 @@ select any element that is a sibling and comes after the target element in the D
  
 
 
- /* --- Activities Pag --- */
+ /* --- Activities Page --- */
  #algonquin-park-title {
  margin-bottom: 20px;
  }
@@ -188,10 +201,29 @@ select any element that is a sibling and comes after the target element in the D
   font-size: 48px;
  }
 
+  /* --- Spa Page --- */
+#appointment-box {
+  margin-top: 38px;
+  padding-bottom: 0px;
+}
+
+#award-title {
+  padding-bottom: 15px;;
+}
+
+#spa-products-title {
+  padding-bottom: 15px;;
+}
+ .center-content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+ 
 /* .8 --- Footer --- */
 
 #main-footer {
-    background-image: url(../images/footer-bg.jpg);
+    background-image: url(../images/footer-bg.png);
      background-repeat: no-repeat;
      background-size: cover;
     background-position: center;
@@ -210,6 +242,7 @@ select any element that is a sibling and comes after the target element in the D
 
  #main-footer-contact-info p {
     line-height: 22px;
+    font-size: 16px;
  }
 
  #main-footer nav {
