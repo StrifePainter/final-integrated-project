@@ -222,6 +222,11 @@ body {
 #spa-products-title {
   padding-bottom: 15px;;
 }
+
+#cancel-title {
+  padding-bottom: 15px;;
+}
+
  .center-content {
     display: flex;
     justify-content: center;
