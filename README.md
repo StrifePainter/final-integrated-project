@@ -1,5 +1,5 @@
-# final-integrated-project
-FIP for IMD Fall Semester.
+# Olivia's final integrated project for Couples Resort
+FIP for IMD Fall Semester of three mobile and one desktop page for Couples Resort's redesign.
 
 ## Installation 💻
 None required, simply download .zip file and extract.
