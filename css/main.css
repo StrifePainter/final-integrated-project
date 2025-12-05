@@ -167,6 +167,17 @@ body {
     padding-top: 20px;
  } 
 
+  .hero-header-desk {
+    font-size: 14px;
+    line-height: 22px;
+ }
+
+ .hero-header-desk p:first-of-type {
+    border-top: solid 4px #CF6666;
+    margin-top: 30px;
+    padding-top: 20px;
+ } 
+
  .box-container {
     background-color:#CF6666;
     padding: 1rem;
@@ -178,8 +189,14 @@ body {
     border-top: solid 3px #CF6666;
     margin-top: 15px;
     padding-top: 20px;
-    
 }
+
+ .line-desk {
+    border-top: solid 4px #CF6666;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
  #snowmobile-info-box {
   border-top:
 }
@@ -591,17 +608,7 @@ ol, li {
 }
 
 .desk-hero-overlap {
-    /* Force content box to occupy the exact same spot */
-    grid-area: 1 / 1; 
-    
-    /* Place the box above the image */
-    z-index: 10; 
-
-    /* You can now position the box content within this shared cell: */
-    align-self: end;    /* e.g., Stick to the bottom of the image area */
-    justify-self: start; /* e.g., Stick to the left of the image area */
-    
-    /* If you still need the specific column span: */
+    align-self: end;
     grid-column: 2 / 7; 
 }
  /* seasonal attractions */
@@ -612,6 +619,7 @@ ol, li {
     font-size: 48px;
     display: block; 
     margin: 0 auto 10px auto;
+    padding-top: 50px;
  }
 
  /* desktop footer */
@@ -651,14 +659,12 @@ ol, li {
 
  #desktop-footer-nav ul {
   list-style: none;
-    padding: 0;
+    padding: 25px;
     margin: 0;
 }
 
 #desktop-footer-nav ul li {
-
-    margin-right: 0; 
-
+    margin-right: 0;
     margin-bottom: 30px;
 }
 
@@ -674,16 +680,12 @@ ol, li {
     padding: 10px 0; 
 }
 
-
-
 .footer {
     display: flex;
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 10px;
 }
-
-
 
  #desktop-price-policy {
     border-top: solid 3px #CF6666;
