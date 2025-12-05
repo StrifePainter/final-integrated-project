@@ -1,7 +1,3 @@
-.hidden{
-    display:none;
-}
-
 /* 
 
     CSS Guide
@@ -10,10 +6,11 @@
     2. General Styles
     3. Header
     4. Main Hero Image
-    5. Why Couples Resort
-    6. About & FAQ
-    7. Contact Form
+    5. Feed the Wildlife Birds
+    6. Activities Page
+    7. Spa Page
     8. Footer
+    9. Desktop Page
 
 */
 
@@ -170,6 +167,17 @@ body {
     padding-top: 20px;
  } 
 
+  .hero-header-desk {
+    font-size: 14px;
+    line-height: 22px;
+ }
+
+ .hero-header-desk p:first-of-type {
+    border-top: solid 4px #CF6666;
+    margin-top: 30px;
+    padding-top: 20px;
+ } 
+
  .box-container {
     background-color:#CF6666;
     padding: 1rem;
@@ -181,8 +189,14 @@ body {
     border-top: solid 3px #CF6666;
     margin-top: 15px;
     padding-top: 20px;
-    
 }
+
+ .line-desk {
+    border-top: solid 4px #CF6666;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
  #snowmobile-info-box {
   border-top:
 }
@@ -196,18 +210,25 @@ body {
  
 
 
- /* --- Activities Page --- */
+ /* 6. --- Activities Page --- */
  #algonquin-park-title {
  margin-bottom: 20px;
  }
  
+#desk-park-activities + ul li {
+    /* Or, if the H3 and UL are siblings inside the column DIV: */
+    /* .desk-col-start-7 ul li { */
+    
+    /* Add space below each list item */
+    margin-bottom: 20px; /* Adjust 15px to any value you need */
+}
  #seasonal-list {
   list-style-type: none;
   margin: 35px;
   font-size: 48px;
  }
 
-  /* --- Spa Page --- */
+  /* 7.--- Spa Page --- */
 
 
 #appointment-box {
@@ -269,12 +290,6 @@ body {
     padding-top: 30px;
     line-height: 22px;
  }
-
-
-
-
-
-
 
 
 
@@ -501,3 +516,182 @@ ol, li {
 .carousel::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
+
+
+
+
+
+
+/* .9 --- Desktop Page --- */
+
+/*
+#desktop-outline {
+   outline: 20px solid #333;
+   width: 1168px;
+   margin: 20px auto 20px auto;
+   border-radius: 10px;
+} */
+
+#desktop-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 253px;
+    margin-left: 17px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+#desktop-main-header {
+    color: #626262;
+    font-family: "Sanchez", "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+
+#desktop-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#desktop-nav ul li {
+    margin-right: 30px; 
+}
+
+#desktop-nav ul li a {
+    display: block; 
+    padding: 10px 0 10px 0;
+}
+
+.desktop-book-now {
+    background-color: #9a2018;
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 500ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    transition:all 1s ease;
+    cursor: pointer;
+    grid-row: 1/2;
+    height: 108px;
+ }
+
+ .book-now:hover {
+    box-shadow: inset 0px -120px 0px 0px rgb(196, 28, 28);
+ }
+
+ h3 {
+  font-size: 18px;
+ }
+
+
+/* 4. ---Main Hero Image--- */
+ 
+ .desk-hero-overlap {
+   grid-row: 1 / 12; 
+}
+
+
+/* Ensure the image scales and spans the full grid area */
+.desk-grid-full img {
+    max-width: 100%;
+    height: auto;
+    /* Force image to occupy row 1, column 1 */
+    grid-area: 1 / 1; 
+}
+
+.desk-hero-overlap {
+    align-self: end;
+    grid-column: 2 / 7; 
+}
+ /* seasonal attractions */
+
+ #desk-seasonal-list {
+    list-style-type: none;
+    text-align: center;
+    font-size: 48px;
+    display: block; 
+    margin: 0 auto 10px auto;
+    padding-top: 50px;
+ }
+
+ /* desktop footer */
+
+ #desktop-footer {
+    background-image: url(../images/desktop-footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 40px;
+    padding-bottom: 80px;
+ }
+
+  #desktop-footer-contact-info h3 {
+    font-size: 28px;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-family: 'ceragr-regularuploaded_file', arial, sans-serif;
+ }
+
+ #desktop-footer-contact-info p {
+    line-height: 42px;
+    font-size: 16px;
+ }
+
+
+ /*navigation footer for desktop */
+
+ #desktop-footer-nav {
+    display: flex;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+ }
+
+ #desktop-footer-nav ul {
+  list-style: none;
+    padding: 25px;
+    margin: 0;
+}
+
+#desktop-footer-nav ul li {
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+#desktop-footer-nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Link Appearance */
+#desktop-footer-nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 0; 
+}
+
+.footer {
+    display: flex;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+ #desktop-price-policy {
+    border-top: solid 3px #CF6666;
+    margin-top: 15px;
+    padding-top: 30px;
+    line-height: 22px;
+    text-align: center;
+ }
+
