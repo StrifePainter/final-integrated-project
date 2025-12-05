@@ -533,18 +533,16 @@ ol, li {
 } */
 
 #desktop-logo {
-    display: flex;
     justify-content: center;
     align-items: center; 
-    width: 253px;
+    width: 262px;
     margin-left: 17px;
-    margin-top: 32px;
-    margin-bottom: 40px;
+    margin-top: 35px;
+    margin-bottom: 20px;
 }
 
 #desktop-main-header {
     color: #626262;
-    font-family: "Sanchez", "Times New Roman", Times, serif;
     font-size: 18px;
 }
 
@@ -555,10 +553,14 @@ ol, li {
     display: flex;
     padding: 20px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
+#desktop-nav ul li:first-of-type {
+    border-left: solid 3px #CF6666;
+}
+  
 #desktop-nav ul li {
     margin-right: 30px; 
 }
@@ -579,7 +581,6 @@ ol, li {
     font-style: italic;
     transition:all 1s ease;
     cursor: pointer;
-    grid-row: 1/2;
     height: 108px;
  }
 
