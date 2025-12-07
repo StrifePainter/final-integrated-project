@@ -265,7 +265,8 @@ body {
 #desk-park-activities + ul li {
   margin-bottom: 20px;
 }
- #seasonal-list {
+
+#seasonal-list {
   list-style-type: none;
   margin: 35px;
   font-size: 48px;
@@ -619,15 +620,19 @@ list-style: none;
 }
 
 #desktop-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 10px 0;
-  display: flex;
-  padding: 20px;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
+<<<<<<<<< Temporary merge branch 1
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
+
 
 #desktop-nav ul li:first-of-type {
   border-left: solid 3px #CF6666;
@@ -697,6 +702,13 @@ h3 {
 
 #desk-seasonal-list a {
   position: absolute;
+ }
+
+#desk-seasonal-list span {
+    position: absolute;
+    top: 45%;
+    left: 53%;
+    transform: translate(-50%, -50%);
  }
  /* desktop footer */
 
