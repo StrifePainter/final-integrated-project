@@ -64,11 +64,11 @@ body, p, h1, h2, h3, h4, h5 {
 /* ---Desktop Library Grid Styles--- */
 
 .desk-grid-con { 
- display: grid;
- grid-template-columns: repeat(12, calc(980px / 12)); 
- grid-column-gap: 20px;
- width: 1200px;
- margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(12, calc(980px / 12)); 
+   grid-column-gap: 20px;
+   width: 1200px;
+   margin: 0 auto;
 }
 
 .desk-grid-full {
