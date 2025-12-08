@@ -262,7 +262,13 @@ body {
     margin-bottom: 20px;
  }
  
+#park-activities + ul li {
+  list-style: square;
+  margin-bottom: 10px;
+}
+
 #desk-park-activities + ul li {
+  list-style: square;
   margin-bottom: 20px;
 }
 
@@ -278,7 +284,7 @@ body {
 #seasonal-list li {
     position: relative;
     padding-bottom: 32px;
-    
+    left: -39px;
   }
 
 #seasonal-list li:nth-child(odd) {
