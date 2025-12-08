@@ -323,18 +323,18 @@ details p {
 }
 
 details img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 summary {
-    background-color: #9a2018;
-    display: flex;
-    padding: 10px;
-    font-size: 24px;
+  background-color: #9a2018;
+  display: flex;
+  padding: 10px;
+  font-size: 24px;
 }
 
 summary:hover {
@@ -343,20 +343,20 @@ summary:hover {
 }
 
 summary::marker {
-    content: none;
+  content: none;
 }
 
 summary::before {
-    content: "▶ ";
-    display: inline-block;
-    margin-right: 10px;
-    transition: transform 0.3s ease;
-    transform: rotate(0deg); 
+  content: "▶ ";
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+  transform: rotate(0deg); 
 }
 
 
 details[open] summary::before {
-    transform: rotate(90deg); 
+  transform: rotate(90deg); 
 }
 
 /* .8 --- Footer --- */
