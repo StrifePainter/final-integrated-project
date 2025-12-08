@@ -270,16 +270,42 @@ body {
     margin-bottom: 20px;
  }
  
+#park-activities + ul li {
+  list-style: square;
+  margin-bottom: 10px;
+}
+
 #desk-park-activities + ul li {
+  list-style: square;
   margin-bottom: 20px;
 }
 
 #seasonal-list {
-  list-style-type: none;
-  margin: 35px;
-  font-size: 48px;
+    list-style-type: none;
+    width: 402px;
+    font-size: 48px;
+    display: block; 
+    margin: 0 auto 10px auto;
+    padding-top: 50px;
  }
 
+#seasonal-list li {
+    position: relative;
+    padding-bottom: 32px;
+    left: -39px;
+  }
+
+#seasonal-list li:nth-child(odd) {
+    color: #ffffff;
+ }
+
+#seasonal-list span {
+    position: absolute;
+    top: 45%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+ }
+ 
   /* 7.--- Spa Page --- */
 
 
