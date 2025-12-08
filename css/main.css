@@ -472,8 +472,7 @@ details[open] summary::before {
 
 * {
   box-sizing: border-box;
-  scrollbar-color: transparent transparent; /* thumb and track color */
-  scrollbar-width: 0px;
+  scrollbar-color: transparent transparent;
 }
 
 *::-webkit-scrollbar {
@@ -902,13 +901,13 @@ input[type="checkbox"]:checked + span::after {
   right: 5px;
 }
 
-/* Define the appearance when the checkbox is checked */
+
 #newsletter input[type="checkbox"]:checked {
     background-color:#9a2018; /* Example background color */
     border-color:#CF6666;
 }
 
-/* Optional: Add a checkmark graphic for the checked state */
+
 #newsletter input[type="checkbox"]:checked::after {
     content: "✔";
     color: white;
