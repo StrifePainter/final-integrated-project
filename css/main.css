@@ -34,7 +34,6 @@
 
 /* 2. ---General Styles--- */
 
-/* outline sits outside the border, but it does not take up space. It’s more like a visual effect painted around the element. */
 #mobile-outline {
   outline: 20px solid #333;
   width: 412px;
@@ -244,16 +243,25 @@ body {
   margin: 10px;
 }
 
-#icehiking h3{
+#icehiking h3 {
   padding-bottom: 20px;
 }
 
 #hero-birds {
-    font-size: 14px;
-    line-height: 22px;
+  font-size: 14px;
+  line-height: 22px;
+ }
+
+ #bird-title h3 {
+  padding-bottom: 20px;
  }
 
  #snowshoe-list li {
+  list-style: square;
+  margin: 0 10px 10px 0;
+ }
+
+ #icehiking-list li {
   list-style: square;
   margin: 0 10px 10px 0;
  }
@@ -299,6 +307,36 @@ body {
   margin-bottom: 45px;
 }
   
+/*details and summary*/
+
+details {
+    border: solid 1px #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+details p {
+  color:#626262;
+  padding: 10px;
+}
+
+summary {
+    background-color: #9a2018;
+    padding: 10px;
+    font-size: 24px;
+}
+
+summary::marker {
+    color: blue;
+    content: none;
+}
+
+ summary::before {
+    content: "▶ ";
+} 
+
+
 /* .8 --- Footer --- */
 
 #main-footer {
